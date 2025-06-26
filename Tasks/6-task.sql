@@ -1,3 +1,5 @@
+--6. Customers who have made transactions from different countries within 10 minutes, a common red flag for fraud.
+
 SELECT 
     DISTINCT c.CustomerID,
     c.FullName,
