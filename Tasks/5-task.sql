@@ -1,3 +1,5 @@
+--5. Customers who made multiple large transactions (above $10,000) within a short time frame (less than 1 hour apart)
+
 with TransactionWithLag as (
     select 
         c.CustomerID,
