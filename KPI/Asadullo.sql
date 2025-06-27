@@ -18,9 +18,8 @@ order by total_amount desc
 
 --3-KPI. Gross Profit of Brokerage firms
 
-select 
-		BrokerageFirm,
-		(sum(CurrentValue)-sum(TotalInvested)) as total_profit
+select BrokerageFirm,
+	(sum(CurrentValue)-sum(TotalInvested)) as total_profit
   from Investments_Treasury.StockTradingAccounts
   group by BrokerageFirm
   order by total_profit desc
